@@ -1,9 +1,8 @@
 name: CI
-run-name: $
 on : [push]
 jobs: 
   build:
-    runs-on : [Self-hosted, build]
+    runs-on : [Ubuntu-latest, build]
     steps : 
       - uses : actions/checkout@v3
       - name: Setup Python
